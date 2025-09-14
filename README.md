@@ -64,130 +64,44 @@ Una moderna applicazione web per scoprire e gestire eventi musicali, costruita s
 - **Icons:** Lucide React
 - **Deployment:** Vite build system
 
-## 🎨 Caratteristiche Principali
 
-### 🏠 Homepage
-- **Griglia responsive** di eventi musicali
-- **Filtri per categoria** (Rock, Jazz, Indie, Pop, Electronic, Country)
-- **Ricerca in tempo reale** per titolo e venue
-- **Design moderno** con tema scuro e accenti viola
+## 🗃️ Database Schema
 
-### 📱 Eventi
-- **Visualizzazione dettagliata** con immagini, descrizioni, date
-- **Sistema di biglietti** con stati (Disponibili, Esauriti, Limitati)
-- **Informazioni complete:** venue, prezzo, capacità, organizzatore
-- **Rating** e sistema di valutazione
+**Tabella `events`** con campi per titolo, data, venue, prezzo, categoria, immagini e user_id
+**Storage bucket** per immagini eventi con policies di sicurezza
 
-### 👤 Autenticazione
-- **Registrazione** con username, email e password
-- **Login** sicuro con gestione errori
-- **Protezione** delle funzionalità di creazione/modifica eventi
-- **Gestione sessioni** utente
+## 🚀 Setup Rapido
 
-### ✨ Funzionalità Avanzate
-- **Creazione eventi** con upload immagini
-- **Modifica/eliminazione** eventi (solo per i proprietari)
-- **Filtro "I miei eventi"** per utenti autenticati
-- **Upload immagini** con preview
-- **Responsive design** per mobile e desktop
-
-## 🗃️ Struttura Database
-
-### Tabella `events`
-```sql
-- id (primary key)
-- title (text) - Titolo evento
-- date (date) - Data evento
-- time (time) - Orario inizio
-- duration (text) - Durata evento
-- venue (text) - Nome venue
-- price_range (text) - Fascia di prezzo
-- capacity (integer) - Capacità massima
-- organizer (text) - Organizzatore
-- description (text) - Descrizione
-- rating (decimal) - Valutazione (0-5)
-- available (boolean) - Disponibilità biglietti
-- category (text) - Categoria musicale
-- image (text) - URL immagine
-- user_id (uuid) - ID creatore evento
-```
-
-### Storage
-- **Bucket `event-images`** per le immagini degli eventi
-- **Policies di sicurezza** per upload/download
-
-## 🚀 Come Avviare il Progetto
-
-### Prerequisiti
-- Node.js 18+
-- Account Supabase
-- Git
-
-### Installazione
-
-1. **Clona il repository**
 ```bash
+# Clone e installazione
 git clone <repository-url>
-cd music-events-discovery
-```
-
-2. **Installa le dipendenze**
-```bash
-cd src
+cd music-events-discovery/src
 npm install
-```
 
-3. **Configura Supabase**
-```bash
-# Crea un file .env nella cartella src
-VITE_SUPABASE_URL=your_supabase_url
-VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
-```
+# Configurazione Supabase
+# Crea .env con VITE_SUPABASE_URL e VITE_SUPABASE_ANON_KEY
 
-4. **Esegui le migrazioni**
-```bash
-# Applica le migrazioni nel tuo progetto Supabase
-# File: supabase/migrations/
-```
-
-5. **Avvia il server di sviluppo**
-```bash
+# Avvio
 npm run dev
 ```
 
-## 🎯 Approccio di Sviluppo
+## 🎯 Metodologia di Sviluppo con AI
 
-Questo progetto dimostra un approccio di sviluppo iterativo e rapido:
+**Sequenza operativa utilizzata:**
 
-1. **🎨 Design first:** Prototipazione in Figma + UI Designer
-2. **⚡ Sviluppo rapido:** Implementazione con Bolt
-3. **🔄 Iterazione continua:** Feedback immediato e miglioramenti
-4. **🚀 Integrazione progressiva:** Database e autenticazione step-by-step
+1. **🎨 Design → AI:** Figma + UI Designer per prototipo e prompt
+2. **⚡ Code → AI:** Bolt per sviluppo frontend iterativo  
+3. **🗄️ Database → AI:** Supabase setup e integrazione guidata
+4. **👤 Auth → AI:** Implementazione autenticazione step-by-step
 
-## 📸 Screenshots
+**Risultato:** App completa sviluppata in modo iterativo con AI, senza pianificazione rigida
 
-![App Screenshot](docs/screenshot%20app.png)
 
-## 🔮 Prossimi Passi
-
-Il progetto è pronto per essere esteso con:
-- **Sistema di prenotazioni** biglietti
-- **Notifiche** per nuovi eventi
-- **Sistema di recensioni** utenti
-- **Integrazione** con mappe per location
-- **Chat** tra organizzatori e partecipanti
-
-## 🤝 Contribuire
-
-Questo progetto è una dimostrazione - sentiti libero di:
-- **Sperimentare** con nuove funzionalità
-- **Iterare** rapidamente
-- **Esplorare** approcci di sviluppo alternativi
 
 ## 📄 Licenza
 
-Questo progetto è open source e disponibile sotto licenza MIT.
+MIT License - Progetto dimostrativo
 
 ---
 
-*Costruito come dimostrazione di sviluppo iterativo con Bolt e Supabase*
+*Dimostrazione di sviluppo iterativo con AI: Figma → UI Designer → Bolt → Supabase*
