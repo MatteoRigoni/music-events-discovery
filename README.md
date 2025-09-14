@@ -1,58 +1,58 @@
 # 🎵 Music Events Discovery
 
-Una moderna applicazione web per scoprire e gestire eventi musicali, costruita interamente con **vibe coding** - un approccio di sviluppo guidato dall'intuizione e dall'iterazione rapida.
+> **⚠️ DISCLAIMER:** Questa applicazione è **solo una dimostrazione** di utilizzo di **vibe coding** con **Bolt**. È stata sviluppata come esempio pratico di sviluppo iterativo e rapido, non come prodotto commerciale.
+
+Una moderna applicazione web per scoprire e gestire eventi musicali, costruita seguendo un approccio di sviluppo iterativo e guidato dall'intuizione.
 
 ![App Screenshot](docs/screenshot%20app.png)
 
-## 🎯 Cos'è Vibe Coding?
+## 🚀 Sequenza Operativa di Sviluppo
 
-Il **vibe coding** è un approccio di sviluppo che privilegia l'intuizione, l'iterazione rapida e la sperimentazione creativa rispetto alla pianificazione rigida. In questo progetto, ho seguito il flusso creativo, partendo da un'idea e sviluppandola step-by-step attraverso feedback immediato e miglioramenti continui.
-
-## 🚀 La Storia del Progetto
-
-### 1. 🎨 Inizio con il Design (Figma + UI Designer)
-
-Il viaggio è iniziato con la creazione di un design in **Figma** per definire la struttura e l'estetica dell'applicazione.
+### 1. 🎨 Design e Prototipazione
 
 **Figma Design:** [Visualizza il design originale](https://www.figma.com/design/o30zAO58vSMHHRorlaWAdO/Music-Events-Discovery?node-id=0-1&t=UDpzCvbXn3FB4lEY-1)
 
-Ho poi utilizzato **UI Designer** per generare un'immagine di riferimento e un prompt descrittivo dettagliato:
-
-```
-Platform: Mobile and Web
-Layout:
-- Header bar con titolo "Music Events Discovery", barra di ricerca e filtro categorie
-- Griglia di eventi con: immagine, titolo, descrizione, disponibilità biglietti, location e data
+**UI Designer** per generare immagine di riferimento e prompt dettagliato:
+- Header con titolo, ricerca e filtri categorie
+- Griglia eventi con immagine, titolo, descrizione, disponibilità, location e data
 - Color Scheme: Grigio scuro, nero e viola
-- Style: Ricco e moderno, attraente per un pubblico giovane
-```
+- Style: Moderno e attraente per pubblico giovane
 
 ![Reference UI](docs/reference_ui_image_by_UI-Designer.png)
 
-### 2. 🔥 Sviluppo Iterativo con Bolt
+### 2. 🔥 Sviluppo Frontend con Bolt
 
-Ho incollato tutto il materiale su **Bolt** e iniziato le iterazioni per creare:
-- **Homepage** con griglia di eventi
-- **Pagina dettaglio** per ogni evento
-- **Sistema di filtri** per categorie musicali
-- **Ricerca** in tempo reale
+**Materiale trasferito su Bolt:**
+- Design Figma + immagine UI Designer
+- Prompt dettagliato delle specifiche
 
-Ogni iterazione è stata guidata dal "vibe" - aggiungendo funzionalità che sentivo fossero necessarie in quel momento, senza una pianificazione rigida.
+**Iterazioni di sviluppo:**
+- Homepage con griglia eventi
+- Pagina dettaglio eventi
+- Sistema filtri per categorie musicali
+- Ricerca in tempo reale
+- Componenti React + TypeScript + Tailwind CSS
 
-### 3. 🗄️ Integrazione Database con Supabase
+### 3. 🗄️ Setup Database Supabase
 
-Dopo aver creato l'account Supabase, ho integrato il database:
+**Configurazione:**
+- Creazione account Supabase
+- Setup progetto e configurazione URL/keys
+- Creazione tabella `events` con schema completo
+- Configurazione storage bucket per immagini
 
-- **Creazione tabelle** tramite l'integrazione di Bolt
-- **Aggiunta iterativa** delle funzionalità CRUD
-- **Miglioramenti step-by-step** basati sul feedback immediato
+**Integrazione:**
+- Connessione frontend con Supabase client
+- Implementazione CRUD operations
+- Gestione upload immagini
 
-### 4. 👥 Sistema di Autenticazione
+### 4. 👥 Sistema Autenticazione
 
-Ho aggiunto progressivamente:
-- **UI per sign in e registrazione**
-- **Integrazione completa** con Supabase Auth
-- **Gestione stati utente** e permessi
+**Implementazione:**
+- UI per registrazione e login
+- Integrazione Supabase Auth
+- Protezione routes e funzionalità
+- Gestione stati utente e permessi
 
 ## 🛠️ Stack Tecnologico
 
@@ -155,22 +155,14 @@ VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
 npm run dev
 ```
 
-## 🎯 Filosofia Vibe Coding
+## 🎯 Approccio di Sviluppo
 
-Questo progetto è un esempio perfetto di **vibe coding**:
+Questo progetto dimostra un approccio di sviluppo iterativo e rapido:
 
-1. **🎨 Inizio creativo:** Design in Figma + UI Designer
-2. **⚡ Iterazione rapida:** Sviluppo con Bolt, aggiungendo funzionalità al volo
-3. **🔄 Feedback immediato:** Ogni modifica testata istantaneamente
-4. **🚀 Evoluzione organica:** L'app è cresciuta naturalmente, senza over-engineering
-5. **💡 Intuizione guidata:** Decisioni prese in base al "feeling" del momento
-
-### Vantaggi del Vibe Coding:
-- **Velocità di sviluppo** incredibile
-- **Creatività libera** senza vincoli di pianificazione
-- **Risultati sorprendenti** che emergono naturalmente
-- **Divertimento** nel processo di sviluppo
-- **Apprendimento continuo** attraverso l'esperimentazione
+1. **🎨 Design first:** Prototipazione in Figma + UI Designer
+2. **⚡ Sviluppo rapido:** Implementazione con Bolt
+3. **🔄 Iterazione continua:** Feedback immediato e miglioramenti
+4. **🚀 Integrazione progressiva:** Database e autenticazione step-by-step
 
 ## 📸 Screenshots
 
@@ -187,11 +179,10 @@ Il progetto è pronto per essere esteso con:
 
 ## 🤝 Contribuire
 
-Questo progetto è stato costruito con vibe coding - sentiti libero di:
+Questo progetto è una dimostrazione - sentiti libero di:
 - **Sperimentare** con nuove funzionalità
 - **Iterare** rapidamente
-- **Seguire l'intuizione** per miglioramenti
-- **Divertirti** nel processo!
+- **Esplorare** approcci di sviluppo alternativi
 
 ## 📄 Licenza
 
@@ -199,4 +190,4 @@ Questo progetto è open source e disponibile sotto licenza MIT.
 
 ---
 
-*Costruito con ❤️ e vibe coding - dove l'intuizione incontra l'innovazione!*
+*Costruito come dimostrazione di sviluppo iterativo con Bolt e Supabase*
